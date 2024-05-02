@@ -1,0 +1,39 @@
+.hotel-view {
+  background-color: #fff;
+  flex: 1;
+}
+
+.gallery {
+  display: flex;
+
+  &__photo {
+    width: 100%;
+    display: block;
+  }
+}
+
+.cta {
+  padding-block: 3.5rem;
+  text-align: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding-block: 2.5rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    padding-block: 2rem;
+  }
+
+  &__book-now {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+    color: var(--color-grey-dark-2);
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 1.5rem;
+      padding-inline: 1rem;
+    }
+  }
+}
